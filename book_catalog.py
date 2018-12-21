@@ -8,7 +8,7 @@ import datetime
 """ Final Project - Book Catalogue"""
 
 
-DATABASE = 'booksapp12.db'
+DATABASE = 'booksapp.db'
 SECRET_KEY = '@\x96\xe4.\x1d\xe9M`\xe8C\x8e?\x17:\x1ee\xafBm^u-\xb4z'
 API_GOOGLE = "https://www.googleapis.com/books/v1/volumes?q=isbn:"
 
