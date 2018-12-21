@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+
+ <div class="topnav">
+  <a href="/home">Home</a>
+  <a class="active" href="/signup">Sign Up</a>
+  <a href="/login">Login</a>
+  <a href="/booklist">My Book List</a>
+  <a href="/search">Search</a>
+  <a href="/logout">Logout</a>
+   
+</div>
+
+
+	<div class="container">
+            <h1>Please SignUp</h1>
+            <br>
+            <form action="" method="post">
+               <input type="TEXT" placeholder="First Name" name="user_first_name" value="{{ request.form.user_first_name }}"><br><br>
+               <input type="TEXT" placeholder="Last Name" name="user_last_name" value="{{ request.form.user_last_name }}"><br><br>
+               <input type="TEXT" placeholder="Username" name="user_name" value="{{ request.form.user_name }}"><br><br>
+               <input type="password" placeholder="Password" name="password" value="{{ request.form.password }}"><br><br>
+               <input class="btn btn-default" type="submit" value="SignUp">
+</form>
+{% if error %}
+   <p class="error"><strong>Error:</strong> {{ error}}</p>
+{% endif %}
+        </div>
+
+{% endblock content %}
